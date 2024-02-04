@@ -17,7 +17,7 @@ jobs:
       run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
     
     - name: Build Docker Image
-      run: docker build -t threejsApplication .
+      run: docker build -t threejs-app .
     - name: Push to DockerHub
-      run: docker push parthsinha18/threejsApplication:latest
+      run: docker push parthsinha18/threejs-app:latest
     
